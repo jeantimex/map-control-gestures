@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello World</title>
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body>
+  <h1>Hand Gesture Recognition</h1>
+  <section id="demos" class="invisible">
+    <p>Hold your hand in front of your webcam to get a gesture prediction!</p>
+    <div id="liveView" class="videoView">
+      <button id="webcamButton" class="mdc-button">
+        <span class="mdc-button__ripple"></span>
+        <span class="mdc-button__label">ENABLE WEBCAM</span>
+      </button>
+      <div style="position: relative;">
+        <video id="webcam" style="position: absolute; left: 0; top: 0; transform: scaleX(-1);" autoplay playsinline></video>
+        <canvas class="output_canvas" id="output_canvas" style="position: absolute; left: 0; top: 0; transform: scaleX(-1);"></canvas>
+        <p id="gesture_output" class="output"></p>
+      </div>
+    </div>
+  </section>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+body {
+  font-family: sans-serif;
+  margin: 2em;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+}
+
+#demos {
+  max-width: 480px;
+  margin: 2em auto;
+}
+
+.invisible {
+  display: none;
+}
+
+.videoView {
+  position: relative;
+  width: 480px;
+  height: 360px;
+  margin: 1em auto;
+  border: 2px solid #ccc;
+}
+
+#webcamButton {
+  display: block;
+  margin: 1em auto;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.output {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 0.5em;
+  box-sizing: border-box;
+  white-space: pre-wrap;
+}
